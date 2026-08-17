@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ivan Lau — Program Management</title>
+<meta name="description" content="Ivan Lau — program and operations leader. 13+ years running complex, cross-functional programs and building the commercial and pricing models underneath them.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1a1d21; --muted:#5c636e; --faint:#8a919c; --line:#e6e8ec;
+    --bg:#ffffff; --bg2:#f7f8f9; --accent:#2f4a6b; --accent-soft:#eef2f7;
+    --maxw:760px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;font-size:16.5px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  h1,h2,h3{font-family:"Newsreader",Georgia,serif;font-weight:500;letter-spacing:-.01em;line-height:1.2}
+
+  /* Header */
+  header.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.9);
+    backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--line)}
+  .nav-inner{max-width:var(--maxw);margin:0 auto;padding:14px 24px;display:flex;
+    align-items:center;justify-content:space-between}
+  .nav-name{font-family:"Newsreader",serif;font-size:18px;font-weight:600;color:var(--ink)}
+  .nav-links a{color:var(--muted);font-size:14px;margin-left:20px}
+  .nav-links a:hover{color:var(--ink);text-decoration:none}
+  @media(max-width:560px){.nav-links a{margin-left:14px;font-size:13px}}
+
+  /* Hero */
+  .hero{padding:76px 0 60px}
+  .hero h1{font-size:44px;margin:0 0 6px}
+  .hero .role{font-size:18px;color:var(--accent);font-weight:500;margin-bottom:20px}
+  .hero p{font-size:19px;color:var(--muted);margin:0 0 28px;max-width:620px}
+  @media(max-width:560px){.hero{padding:52px 0 40px}.hero h1{font-size:34px}}
+  .btns a{display:inline-block;margin-right:12px;margin-bottom:10px;padding:11px 20px;
+    border-radius:8px;font-size:15px;font-weight:500}
+  .btn-primary{background:var(--accent);color:#fff}
+  .btn-primary:hover{background:#25405f;text-decoration:none}
+  .btn-ghost{border:1px solid var(--line);color:var(--ink)}
+  .btn-ghost:hover{border-color:var(--faint);text-decoration:none}
+
+  section{padding:44px 0;border-top:1px solid var(--line)}
+  section h2{font-size:15px;text-transform:uppercase;letter-spacing:.14em;color:var(--faint);
+    font-family:"Inter",sans-serif;font-weight:600;margin:0 0 20px}
+  section p{margin:0 0 16px}
+  .lead{font-size:17px}
+
+  .note{background:var(--bg2);border:1px solid var(--line);border-radius:10px;
+    padding:14px 18px;font-size:14.5px;color:var(--muted);margin-top:8px}
+
+  /* Case cards */
+  .case{border:1px solid var(--line);border-radius:14px;padding:24px 24px 20px;margin-bottom:22px;background:var(--bg)}
+  .case h3{font-size:22px;margin:0 0 16px;color:var(--ink)}
+  .case .field{margin:0 0 13px;font-size:15.5px}
+  .case .field b{color:var(--ink)}
+  .case .skills{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);
+    font-size:13px;color:var(--faint)}
+  .work-intro{color:var(--muted);margin-bottom:24px}
+
+  /* Principles */
+  .principle{margin-bottom:20px}
+  .principle b{color:var(--ink)}
+  .approach-intro{font-style:italic;color:var(--muted);margin-bottom:22px}
+  .approach-outro{font-style:italic;color:var(--muted);margin-top:22px;font-size:15px}
+
+  .skillgroup{margin-bottom:14px;font-size:15.5px}
+  .skillgroup b{color:var(--ink)}
+
+  footer{border-top:1px solid var(--line);padding:40px 0 64px;color:var(--muted);font-size:15px}
+  footer .name{font-family:"Newsreader",serif;font-size:20px;color:var(--ink);font-weight:600;margin-bottom:6px}
+  footer .contact a{margin-right:14px}
+  footer .fine{font-size:13.5px;color:var(--faint);font-style:italic;margin-top:18px}
+  em{font-style:italic}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <span class="nav-name">Ivan Lau</span>
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="hero" style="border-top:none">
+    <h1>Ivan Lau</h1>
+    <div class="role">Program &amp; Operations Leader</div>
+    <p>I run complex, cross-functional programs — and I build the commercial and pricing models underneath them. 13+ years across travel, marketplace, and platform businesses.</p>
+    <div class="btns">
+      <a class="btn-primary" href="#work">View work</a>
+      <a class="btn-ghost" href="#contact">Get in touch</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>How I work</h2>
+    <p class="lead">I'm a program and operations leader with 13+ years across travel, marketplace, and platform businesses. The through-line is program management at the intersection of business, systems, and data. What's a little different about me is that I don't just run the program; I build the commercial and pricing models underneath it. I've run the programs behind roughly a billion dollars in annual booked value.</p>
+    <p>What I do best is take something complex, ambiguous, or manual, understand exactly how it works, and build a cleaner, more scalable way to operate. I'm the connective tissue across Product, Engineering, Data, Finance, Legal, and external partners.</p>
+    <div class="note">A note on confidentiality: partner names and certain figures are generalized or given as ranges to respect confidentiality and prior agreements. Specifics can be discussed in conversation. I treat my current employer's data the way I'd treat yours.</div>
+  </section>
+
+  <section id="work">
+    <h2>Selected work</h2>
+    <p class="work-intro">Three anonymized examples: a high-stakes migration, a commercial/pricing framework, and a systems re-architecture.</p>
+
+    <div class="case">
+      <h3>Migrating a major enterprise supplier to a new core system, without downtime</h3>
+      <p class="field"><b>Context.</b> My company holds a direct connection to a major global supplier partner (several thousand locations) through a connectivity partner. Shortly after that connection went live, the supplier began a multi-year migration of every location onto a new core platform, in small batches every couple of weeks. Each location that migrated dropped off our connection until we were re-certified on the new platform. Left unmanaged, we'd have lost coverage of the supplier gradually, batch by batch, over roughly two years.</p>
+      <p class="field"><b>My role.</b> Cross-functional program lead, end to end, coordinating Product, Engineering, Data, and Pricing, along with our operations and client teams, two external vendors, and the supplier directly.</p>
+      <p class="field"><b>What I did.</b> Brought the initial connection live in about five weeks against a nine-to-ten-week plan. Built the operating rhythm around the migration: a weekly, health-coded status and a live account-level tracker. From there I led the escalation with the supplier and the vendor up through our executive team, proposing an alternate connection path when the supplier's side stalled. Along the way I made a number of independent catches. Two of the most impactful: finding a usable identifier in the raw data that engineering had concluded didn't exist (which made an automated content approach possible), and challenging an undercount in our first data pull that would otherwise have quietly dropped content on thousands of locations.</p>
+      <p class="field"><b>Outcome.</b> A clean launch: full activation, ~98% transaction success, sub-second response times, zero client issues, and meaningful share taken from incumbents in the first week. When the migration threatened coverage, the risk was contained with no production impact, then cleared, and I left behind a design and tracker that make every future batch effectively hands-off.</p>
+      <div class="skills">Skills applied: end-to-end program management · cross-functional and external stakeholder coordination · operating cadence and executive reporting · data analysis in ambiguous conditions.</div>
+    </div>
+
+    <div class="case">
+      <h3>A repeatable commercial framework for partner negotiations</h3>
+      <p class="field"><b>Context.</b> A number of large partners were beginning to move their distribution off a legacy channel (one where we earned a fixed fee per transaction) and onto a direct connection. Every partner was being negotiated from scratch, which left margin on the table and let the first deal set precedent for all the others.</p>
+      <p class="field"><b>My role.</b> Originated the methodology and built every financial model behind it; authored the proposal and counter-proposal and drove internal alignment. (The relationship owner runs the live negotiation; my mandate was the strategy and the models.)</p>
+      <p class="field"><b>What I did.</b> I designed a standardized commercial framework and rate card the company could reuse for every partner, built to beat the economics of the channel it replaced. It defined the economic floor, the levers (a per-transaction fee, a per-unit fee, a volume override, or a commission), the non-negotiables, and the responses to each point of pushback. My central insight was that the margin lives in the commission, not the fee. I also caught an error in my own model: I'd priced it on one unit, then realized the incentive actually accrues on a different, higher-volume unit, which materially changed the economics for this partner. I owned it and re-ran the model. When the partner countered, I reworked it into a commission model with a discount grid tied to demand timing, risk-adjusted for lower-demand periods. When our executive sponsor pressure-tested it, I translated the commission into per-unit economics on the spot. And midway through, I lost my source for the underlying rate data and rebuilt the margin framework by triangulating across our data and finance teams.</p>
+      <p class="field"><b>Outcome.</b> A reusable negotiation framework plus a complete proposal and counter-proposal, with internal alignment secured. The partner is leaning toward the commission model, which is projected to lift their annual margin by a six-figure amount and improve per-transaction economics several-fold over the status quo. The real payoff is the framework itself: now the template for larger partners, where the consistency and margin compound.</p>
+      <div class="skills">Skills applied: commercial and pricing strategy · financial modeling and analysis · executive-ready recommendations · problem-solving under ambiguity.</div>
+    </div>
+
+    <div class="case">
+      <h3>Re-architecting sales tracking and automating a two-way data bridge</h3>
+      <p class="field"><b>Context.</b> A supply/sales team ran its entire motion on a CRM setup that blended sales tracking and product tracking together, with no reliable sync between the CRM and the team's partner portal. As the business scaled, it broke down: no real pipeline visibility, no per-product reporting, and heavy manual work in both directions. Data integrity had also drifted: one partner's discount penetration read at roughly a third of its true figure.</p>
+      <p class="field"><b>My role.</b> End-to-end program owner and de facto systems-requirements architect. I designed the requirements and logic and ran QA, coordinating across revenue operations, the portal product team, data, finance, and an external development firm I managed day to day. (The engineering teams built to my specifications.)</p>
+      <p class="field"><b>What I did.</b> Re-architected the tracking model to one product per record, then built a two-way bridge: changes in the CRM flowed out to the portal, and (the larger gap) partnership and campaign activity in the portal flowed back and automatically created the records in the CRM. I ran the data clean-ups that restored integrity. I also ran a standing prioritization forum where I gathered the team's priorities, translated them for engineering, and sequenced everything into one shared roadmap with weekly updates, the operating rhythm that kept a resource-constrained, multi-team program moving. When the developer building our highest-priority piece left mid-build and bandwidth stayed tight, I re-established the build with a new developer, re-ran QA, and made deliberate scope calls rather than let it stall.</p>
+      <p class="field"><b>Outcome.</b> The re-architecture and automation shipped, removing a large amount of recurring manual work: several hours per week per function on portal sign-ups and batch consolidation alone. Data integrity was restored (that partner's visibility went from ~32% to ~80%), a contact-matching issue affecting roughly one in six records was fixed, and thousands of bad records were caught in QA before they reached production. It became the foundation the team scales on.</p>
+      <div class="skills">Skills applied: systems and process re-architecture · operating cadence and roadmap management · delivery through setbacks · data integrity and QA.</div>
+    </div>
+  </section>
+
+  <section id="approach">
+    <h2>How I run a program</h2>
+    <p class="approach-intro">A former manager once shared her working style with me before we'd met. It set expectations early, and I've borrowed the format. A few things that actually drive how I work:</p>
+
+    <p class="principle"><b>I build things to last.</b> Launch isn't the finish line. It's easy, especially at fast-moving companies, to keep shipping, but building things that don't stick is just waste. I stay close to what we've built, iterate when it needs it, and design for scale from the start. When something isn't getting used, I treat that as a signal worth understanding, not a sunk cost; it's rationale I carry into the next decision. This matters more now that AI makes it trivial to build quickly, and just as easy to build things that don't endure.</p>
+
+    <p class="principle"><b>Alignment before motion.</b> Before anything moves, I want us clear on the problem and the outcome: why we're doing this and what "done" looks like. Once we agree on the destination, I can build the roadmap with conviction. When the rationale is fuzzy is when work churns and time gets wasted.</p>
+
+    <p class="principle"><b>I go deep.</b> My instinct is to understand exactly how something works rather than take the dashboard at face value. It's where some of my best catches have come from; a couple are in the case studies above. When I ask a lot of questions or push on a number, I've usually already reasoned through a few explanations and I'm bringing a point of view, not starting from zero. It's about context, not doubt.</p>
+
+    <p class="principle"><b>Trust is the whole game.</b> You earn it by example and by never leaving people guessing. I try to run a program so no stakeholder has to wonder what we're working toward, why it matters, or what's coming next. Siloed communication and unclear expectations wreck delivery faster than anything technical. My aim is simply to be someone the team can rely on.</p>
+
+    <p class="approach-outro">One more thing: I'm always adding to my toolkit, hard skills and soft, and I like helping the people around me do the same. A team does better when everyone genuinely understands what we're building and why.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills &amp; tools</h2>
+    <p class="skillgroup"><b>Program &amp; operations:</b> end-to-end program management · operating cadences and planning · cross-functional execution (Product, Engineering, Legal, Finance, Ops) · integrated roadmaps, milestones, and risk tracking · executive communication · process design and automation</p>
+    <p class="skillgroup"><b>Commercial &amp; analytical:</b> commercial and pricing modeling · opportunity sizing · KPI reporting and analytics · first-principles problem solving</p>
+    <p class="skillgroup"><b>Tools:</b> SQL · Excel · Looker · Tableau · Snowflake · Hex · Salesforce · Linear · AI-assisted workflows (Claude, Cursor, Gemini)</p>
+  </section>
+
+</div>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="name">Ivan Lau</div>
+    <div>Peekskill, NY</div>
+    <div class="contact" style="margin-top:8px">
+      <a href="mailto:ivan.lau.23@gmail.com">ivan.lau.23@gmail.com</a>
+      <a href="https://www.linkedin.com/in/ivan-lau" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="fine">Details generalized to respect confidentiality. Happy to walk through any of these in more depth in conversation.</div>
+  </div>
+</footer>
+
+</body>
+</html>
